@@ -1,0 +1,17 @@
+Architecture & Design
+
+Requirements:
+
+You must document the Personas for your project
+
+Personas:  https://www.usability.gov/how-to-and-tools/methods/personas.html
+A simple persona template: https://www.romanpichler.com/blog/persona-template-for-agile-product-management/
+
+You must document each Epic/User Stories (name, description, value to the system).
+User Stories: https://www.atlassian.com/agile/project-management/user-stories
+
+Design/Architecture
+Class Diagram
+Sequence Diagram
+State Diagram
+Architecture Views
