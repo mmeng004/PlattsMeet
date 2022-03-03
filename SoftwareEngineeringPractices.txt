@@ -1,0 +1,22 @@
+Project Management : select among the agile process which one you will follow and document how you will be doing it. 
+    JIRA will be used to do weekly timesheet. Task in JIRA should be able to demonstrate the progress of the project.
+Revision Control: GitHub - https://github.com/mmeng004/PlattsMeet
+    Document how you will structure your project vs the revision control system.
+Quality Assurance :  what practice will you use for quality assurance/testing.     
+    Document what and how you will be implementing the practice.
+Code Review:  using the template in Moodle, add 5 items specific on your project/technology to use for code review
+Also, select an additional practice and document how you will use it in the next month.
+
+Deliverable planning: per month, until the end of the semester, set milestone in regard to implement the system, 
+    what will be the challenges (list 2) per team member, per milestone.
+
+Agile Retrospectives Meeting Documentation
+for each Scrum, you must do the Scrum Weekly Summary
+for each sprint, each team's member must document a code review
+after each sprint, you must document for each team's member :
+What achievements are you proud of ? 
+What areas need improvement ?
+Timeline / Task Assignment
+Using the planning/task assignments that were documented for in the Team Concept, after each Milestone, 
+    document your achievement and analyse the results. 
+Submission: pdf of the documentation. One submission per team.
