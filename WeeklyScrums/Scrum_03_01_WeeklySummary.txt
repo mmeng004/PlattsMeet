@@ -1,0 +1,14 @@
+Week 2: First documented Scrum
+Jira #: none
+
+Becky: got django working, looking into angular, researching on javascript
+Next week: documentation/project management, help/about page
+
+Meron: get acquainted with tech, installed django framework, watched tutorials, got reference sites for sprint implementation
+Next week: begin working on login/logout assigned +documentation/project management/jira
+
+Xuanting: learn to use django
+Next week: user management, get onto github
+
+Matthew: django downloaded and working, looked into articles of running django with front end frameworks/database
+Next week: registration page
