@@ -1,22 +1,89 @@
-Project Management : select among the agile process which one you will follow and document how you will be doing it. 
-    JIRA will be used to do weekly timesheet. Task in JIRA should be able to demonstrate the progress of the project.
-Revision Control: GitHub - https://github.com/mmeng004/PlattsMeet
-    Document how you will structure your project vs the revision control system.
-Quality Assurance :  what practice will you use for quality assurance/testing.     
-    Document what and how you will be implementing the practice.
-Code Review:  using the template in Moodle, add 5 items specific on your project/technology to use for code review
-Also, select an additional practice and document how you will use it in the next month.
+Project Management : Adaptive Project Framework - our requirements breakdown structure is outlined by our team concept presentation.
+    Project proceeds in iterative stages (sprints) and at the end of each demo, the team will evaluate previous results to
+    improve performance and practices. We meet outside of class weekly (and as needed close to demo time) over zoom. Meetings are
+    planned either during class or in our Discord group chat. Work hours are logged individually.
 
-Deliverable planning: per month, until the end of the semester, set milestone in regard to implement the system, 
-    what will be the challenges (list 2) per team member, per milestone.
+Revision Control: GitHub - https://github.com/mmeng004/PlattsMeet - commit to trunk not branches
 
-Agile Retrospectives Meeting Documentation
-for each Scrum, you must do the Scrum Weekly Summary
-for each sprint, each team's member must document a code review
-after each sprint, you must document for each team's member :
-What achievements are you proud of ? 
-What areas need improvement ?
-Timeline / Task Assignment
-Using the planning/task assignments that were documented for in the Team Concept, after each Milestone, 
-    document your achievement and analyse the results. 
-Submission: pdf of the documentation. One submission per team.
+Quality Assurance :  Customer Involvement method - each member will place themselves as the role of the customer (considering we are all
+    international/transfer students, and that is our software's target audience) and test the software to meet our own needs as consumers.
+    Project Co-managers Becky and Meron will also look over code and integrate/merge when necessary (like a psuedo pair programming method).
+
+Code Review additions: 
+If the code is specific to front end/back end, is the code in the right language for use with that framework?  
+Is the formatting consistent?
+Have design principles been applied to HTML/CSS code?
+DRY? (Don't Repeat Yourself) - is any code duplicated more than twice?
+What security measures are implemented?
+
+Refactoring: if the team finds that an idea originally presented as part of a sprint is no longer necessary or doable, we will make
+    improvements in our code to make those changes easier when we come to that sprint.
+
+Deliverable planning: 
+Sprint #1:
+Infrastructure operational (All team members)
+Documentation/Project Management (Meron/Becky)
+Epic: User Management ( Wireframe 4 - Registration Page)  
+Create an account (Matt) - Registration Page 
+Modify an account (username,password...) (Xuanting)
+Delete account(Matt)
+Epic: Landing Page ( Wireframe 1/2/3- Landing Page )
+Login/Logout (Meron)
+Retrieve email/password (Forgot email/password) (Xuanting)
+Help (Becky)
+View information about the website (About)(Becky)
+Quality Assurance (All) 
+Code Review (All)
+Challenges:
+
+Sprint #2:
+Epic: User Management ( Wireframe 13 - Settings)  
+User setting (Xuanting)
+Search history/list (Meron)
+Edit profile(Information/Photos) (Matt)
+Epic: Peer Networking (Wireframe 7/ 8 -Search Page/Search Result)
+Send a friend request(Meron)
+Search:by major (Becky)
+Search:by hobbies/interests (Becky)
+Search:by country/hometown (Becky)
+Epic: Friend list / Peer Management (Wireframe 7/ 8 -Search Page/Search Result )
+View friends (Matt)
+Search an account (friend) (Xuanting)
+Quality Assurance (All) 
+Code Review (All)
+Challenges:
+
+Sprint #3:
+Epic:User Management( Wireframe 2 - User ) 
+Complete (All)
+Epic: Peer Networking (Wireframe 14/9/ 8)
+View profile(Matt)
+Send a message(Matt)
+View notifications/messages (Becky)
+Accept/Reject incoming friend request(Xuanting) 
+Epic : Friend List/Peer Management (Wireframe 10)
+Filter by: major(Matt)
+Filter by : hobbies/interests (Meron)
+Filter by : hometown/country (Becky)
+Quality Assurance (All)
+Code Review (All)
+Challenges:
+
+Sprint #4:
+Epic: Peer Networking (Wireframe 11/14)
+Chat (All)
+Block/Ignore(Matt)
+Epic: Friend list /Peer Management (Wireframe 10)
+Remove friend(Meron)
+Editing/Review (Becky)
+Quality Assurance (All) 
+Code Review (All)
+# Integrate Clubs — Link clubs to integrate/
+# Club/Event feature 
+#Make Groups- Create a group an event  -  
+Challenges:
+
+Agile Retrospectives Meeting Documentation: Each week we do a scrum led by Becky and documented as a summary which is appended to the 
+    project in GitHub.
+
+Sprint Retrospectives: after each sprint, each team member documents what achievements they are proud of and what can be improved.
