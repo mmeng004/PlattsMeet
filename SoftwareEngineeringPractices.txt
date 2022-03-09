@@ -36,9 +36,12 @@ Quality Assurance (All)
 Code Review (All)
 Challenges:
 Becky - remembering how to code in HTML and learning how to integrate front end and back end
-Meron -
-Xuanting -
-Matt -
+Meron - Getting acquainted with the technology to do the sprint and coordinating flow with team for components
+Xuanting -The first challenge for me is how to learn how to use Django. Although I learn how to use Python, 
+I had never used Python to build a webpage before. So I need to learn to use Django to build a webpage in the first week.
+The second challenge for me is how to start this project, I learn how to HTML to build a webpage before, 
+but that is the local web page. I have no idea how to start to do a social media web page in the beginning.
+Matt - Learning the basics of django and learning to use Github's functions for the groupwork
 
 Sprint #2:
 Epic: User Management ( Wireframe 13 - Settings)  
@@ -59,7 +62,7 @@ Challenges:
 Becky - learning how to create search functionality and learning to successfully merge code
 Meron -
 Xuanting -
-Matt -
+Matt - Learning how to setup a page with a photo and learning how to display the user's friends no matter the number
 
 Sprint #3:
 Epic:User Management( Wireframe 2 - User ) 
@@ -79,7 +82,7 @@ Challenges:
 Becky - revisiting requirements and making sure our original plan still functions, and finding a database for hometowns
 Meron -
 Xuanting -
-Matt -
+Matt - Learning to implement the messaging and learning how to create a filter for the majors
 
 Sprint #4:
 Epic: Peer Networking (Wireframe 11/14)
@@ -97,9 +100,8 @@ Challenges:
 Becky - juggling project completion and other end-of-semester projects, assigning additional tasks based on what still needs to be done
 Meron - 
 Xuanting -
-Matt -
+Matt -  -Integrating chat separately from messaging and avoiding syntax errors for blocking/ignoring
 
 Agile Retrospectives Meeting Documentation: Each week we do a scrum led by Becky and documented as a summary which is appended to the 
     project in GitHub.
-
 Sprint Retrospectives: after each sprint, each team member documents what achievements they are proud of and what can be improved.
