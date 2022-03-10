@@ -61,7 +61,7 @@ Code Review (All)
 Challenges:
 Becky - learning how to create search functionality and learning to successfully merge code
 Meron -
-Xuanting -
+Xuanting - think about what kind the setting are important to user.
 Matt - Learning how to setup a page with a photo and learning how to display the user's friends no matter the number
 
 Sprint #3:
