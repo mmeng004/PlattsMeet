@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %} 
+{% block content %} 
+  <head>
+	<meta  charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My test page</title>
+	<link href='https://fonts.googleapis.com/css?family=Taviraj' rel='stylesheet'>
+	<style>
+        body {
+          font-family: 'Taviraj';font-size: 22px;
+          }
+		a:link {text-decoration:none;}
+        a:visited {text-decoration:none;}
+        a:hover {text-decoration:underline;}
+        a:active {text-decoration:underline;}
+    </style>
+  </head>
+  <body>
+        <font size="5"><a href="{% url 'home' %}">Back to Landing page</a></font> 
+        <h1 style="text-align:center; border:2px solid Tomato;"> </h1>
+        <body style="background-color:white;">
+        <font size="16">
+        <p><img src="https://i.ibb.co/wW82yP5/PM.png" height="150" width="150" alt="Logo" /><b>PlattsMeet Help Center</b></p>
+		</font> 
+		<font size="6">
+		<dl>
+		    <p><dt>Q1:Do I need to pay for PlattsMeet?</dt>
+			<dd>A: No! PlattsMeet is <b>FREE</b> for all Plattsburgh's students!</dd></p>
+			<p><dt>Q2:Can I use other email accounts to register?</dt>
+			<dd>A:PlattsMeet is making for Plattsburgh students. So the answer is no.</dd></p>
+			<p><dt>Q3:What will happen if I graduated?</dt>
+			<dd>A:  Don't worry! All your data will be removed from our server if you graduated.</dd></p>
+			<p><dt>Q4:Can I change my password or username?</dt>
+			<dd>A: Of course! You can change the password/username to anything you want.</dd></p>
+		</dl>
+		<h4>If you have other questions, please contact us by email! </h4>
+		<h4>Email: XXXX@plattsbugh.edu </h4>
+		</font> 
+		 <h2 style="text-align:center;border:2px solid Tomato;"><strong> </strong></h2>
+  </body>
+{% endblock content %}
+
