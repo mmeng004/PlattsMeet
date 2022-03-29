@@ -17,5 +17,5 @@ class PortalPageView(TemplateView):
 class RegistrationPageView(TemplateView):
     template_name = 'registeration.html' 
     
-class Resetpassword(TemplateView):
+class ResetpasswordView(TemplateView):
     template_name = 'password_reset_form.html' 
