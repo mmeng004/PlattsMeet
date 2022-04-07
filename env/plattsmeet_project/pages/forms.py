@@ -1,6 +1,10 @@
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> parent of 34061f5 (Merge)
 
 
 class NewUserForm(UserCreationForm):
@@ -18,4 +22,18 @@ class NewUserForm(UserCreationForm):
 		user.email = self.cleaned_data['email']
 		if commit:
 			user.save()
+<<<<<<< HEAD
 		return user
+=======
+		return user
+=======
+from .models import Profile
+
+class UserForm(forms.ModelForm):
+    password = forms.CharField(widget=forms.PasswordInput)
+
+    class Meta:
+        model = User
+        fields = ['email', 'password']
+>>>>>>> cfce81419ccaaac94b211d8a94e4f49355188135
+>>>>>>> parent of 34061f5 (Merge)
