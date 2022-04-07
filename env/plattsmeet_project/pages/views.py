@@ -1,4 +1,10 @@
 from django.views.generic import TemplateView
+from django.shortcuts import  render, redirect
+from .forms import NewUserForm
+from django.contrib.auth import login
+from django.contrib import messages
+
+#https://ordinarycoders.com/blog/article/django-user-register-login-logout
 # Create your views here.
 """ from django.shortcuts import render
 from django.shortcuts import render, redirect, get_object_or_404
@@ -31,6 +37,18 @@ class RegistrationPageView(TemplateView):
     
 class ResetpasswordView(TemplateView):
     template_name = 'password_reset_form.html' 
+
+def register_request(request):
+	if request.method == "POST":
+		form = NewUserForm(request.POST)
+		if form.is_valid():
+			user = form.save()
+			login(request, user)
+			messages.success(request, "Registration successful.")
+			return redirect("/portalpage/")
+		messages.error(request, "Unsuccessful registration. Invalid information.")
+	form = NewUserForm()
+	return render (request=request, template_name="registration/register.html", context={"register_form":form})
 
 # #view list of friends
 # def friend_list(request):
