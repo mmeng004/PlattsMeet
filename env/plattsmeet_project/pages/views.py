@@ -35,7 +35,7 @@ class RegistrationPageView(TemplateView):
     template_name = 'register.html' 
     
 class ResetpasswordView(TemplateView):
-    template_name = 'password_reset_form.html' 
+    template_name = 'resetpassword.html' 
 
 class UserFormView(View):
     form_class = UserForm
