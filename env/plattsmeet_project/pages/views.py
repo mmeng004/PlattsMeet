@@ -1,6 +1,6 @@
 from django.views.generic import TemplateView
 # Create your views here.
-from django.shortcuts import render
+""" from django.shortcuts import render
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Profile
 from feed.models import Post
@@ -13,7 +13,7 @@ from .models import Profile, FriendRequest
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 import random
 User = get_user_model()
-
+ """
 class LandingPageView(TemplateView):
     template_name = 'home.html' 
 
@@ -32,45 +32,45 @@ class RegistrationPageView(TemplateView):
 class ResetpasswordView(TemplateView):
     template_name = 'password_reset_form.html' 
 
-#view list of friends
-def friend_list(request):
-    friend = request.user.profile
-    friends = friend.friends.all()
-    context={
-    'friends': friends
-    }
-    return render(request, "users/friendlist.html", context)
+# #view list of friends
+# def friend_list(request):
+#     friend = request.user.profile
+#     friends = friend.friends.all()
+#     context={
+#     'friends': friends
+#     }
+#     return render(request, "users/friendlist.html", context)
 
-#send friend request
-#send a request, take the ID of the user to send a friend request 
-@login_required
-def send_friend_request(request, id):
-    user = get_object_or_404(User, id=id)
-    frequest, created = FriendRequest.objects.get_or_create(
-            from_user=request.user,
-            to_user=user)
-    return HttpResponseRedirect('/users/{}'.format(user.profile.slug))
+# #send friend request
+# #send a request, take the ID of the user to send a friend request 
+# @login_required
+# def send_friend_request(request, id):
+#     user = get_object_or_404(User, id=id)
+#     frequest, created = FriendRequest.objects.get_or_create(
+#             from_user=request.user,
+#             to_user=user)
+#     return HttpResponseRedirect('/users/{}'.format(user.profile.slug))
 
 
-#accept friend request
-@login_required
-def accept_friend_request(request, id):
-    from_user = get_object_or_404(User, id=id)
-    frequest = FriendRequest.objects.filter(from_user=from_user, to_user=request.user).first()
-    user1 = frequest.to_user
-    user2 = from_user
-    user1.profile.friends.add(user2.profile)
-    user2.profile.friends.add(user1.profile)
-    if(FriendRequest.objects.filter(from_user=request.user, to_user=from_user).first()):
-        request_rev = FriendRequest.objects.filter(from_user=request.user, to_user=from_user).first()
-        request_rev.delete()
-    frequest.delete()
-    return HttpResponseRedirect('/users/{}'.format(request.user.profile.slug))
+# #accept friend request
+# @login_required
+# def accept_friend_request(request, id):
+#     from_user = get_object_or_404(User, id=id)
+#     frequest = FriendRequest.objects.filter(from_user=from_user, to_user=request.user).first()
+#     user1 = frequest.to_user
+#     user2 = from_user
+#     user1.profile.friends.add(user2.profile)
+#     user2.profile.friends.add(user1.profile)
+#     if(FriendRequest.objects.filter(from_user=request.user, to_user=from_user).first()):
+#         request_rev = FriendRequest.objects.filter(from_user=request.user, to_user=from_user).first()
+#         request_rev.delete()
+#     frequest.delete()
+#     return HttpResponseRedirect('/users/{}'.format(request.user.profile.slug))
 
-#delete friend request
-@login_required
-def delete_friend_request(request, id):
-    from_user = get_object_or_404(User, id=id)
-    frequest = FriendRequest.objects.filter(from_user=from_user, to_user=request.user).first()
-    frequest.delete()
-    return HttpResponseRedirect('/users/{}'.format(request.user.profile.slug))
+# #delete friend request
+# @login_required
+# def delete_friend_request(request, id):
+#     from_user = get_object_or_404(User, id=id)
+#     frequest = FriendRequest.objects.filter(from_user=from_user, to_user=request.user).first()
+#     frequest.delete()
+#     return HttpResponseRedirect('/users/{}'.format(request.user.profile.slug))
