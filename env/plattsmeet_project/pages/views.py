@@ -1,15 +1,11 @@
 from django.views.generic import TemplateView
-<<<<<<< Updated upstream
 <<<<<<< HEAD
-=======
->>>>>>> Stashed changes
 from django.shortcuts import  render, redirect
 from .forms import NewUserForm
 from django.contrib.auth import login
 from django.contrib import messages
 
 #https://ordinarycoders.com/blog/article/django-user-register-login-logout
-<<<<<<< Updated upstream
 =======
 from django.shortcuts import redirect, render
 from django.contrib.auth import authenticate, login
@@ -17,8 +13,6 @@ from django.views import generic
 from django.views.generic import View
 from .forms import UserForm
 >>>>>>> cfce81419ccaaac94b211d8a94e4f49355188135
-=======
->>>>>>> Stashed changes
 # Create your views here.
 """ from django.shortcuts import render
 from django.shortcuts import render, redirect, get_object_or_404
@@ -83,18 +77,6 @@ class UserFormView(View):
         return render(request, self.template_name, {'form': form})
 
 
-
-def register_request(request):
-	if request.method == "POST":
-		form = NewUserForm(request.POST)
-		if form.is_valid():
-			user = form.save()
-			login(request, user)
-			messages.success(request, "Registration successful.")
-			return redirect("/portalpage/")
-		messages.error(request, "Unsuccessful registration. Invalid information.")
-	form = NewUserForm()
-	return render (request=request, template_name="registration/register.html", context={"register_form":form})
 
 def register_request(request):
 	if request.method == "POST":
