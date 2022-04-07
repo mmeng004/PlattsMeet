@@ -1,10 +1,18 @@
 from django.views.generic import TemplateView
+<<<<<<< HEAD
 from django.shortcuts import  render, redirect
 from .forms import NewUserForm
 from django.contrib.auth import login
 from django.contrib import messages
 
 #https://ordinarycoders.com/blog/article/django-user-register-login-logout
+=======
+from django.shortcuts import redirect, render
+from django.contrib.auth import authenticate, login
+from django.views import generic
+from django.views.generic import View
+from .forms import UserForm
+>>>>>>> cfce81419ccaaac94b211d8a94e4f49355188135
 # Create your views here.
 """ from django.shortcuts import render
 from django.shortcuts import render, redirect, get_object_or_404
@@ -33,10 +41,42 @@ class PortalPageView(TemplateView):
     template_name = 'portalpage.html' 
     
 class RegistrationPageView(TemplateView):
-    template_name = 'registeration.html' 
+    template_name = 'register.html' 
     
 class ResetpasswordView(TemplateView):
-    template_name = 'password_reset_form.html' 
+    template_name = 'resetpassword.html' 
+
+class UserFormView(View):
+    form_class = UserForm
+    template_name = 'register.html'
+
+    def get(self, request):
+        form = self.form_class(None)
+        return render(request, self.template, {'form': form})
+    
+    def post(self, request):
+        form = self.form_class(request.POST)
+
+        if form.is_valid():
+            user = form.save(commit=False)
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            user.set_password(password)
+            user.save()
+
+            user = authenticate(username=username, password=password)
+
+            if user is not None:
+
+                if user.is_active:
+
+                    login(request, user)
+                    request.user
+                    return redirect('home.html')
+
+        return render(request, self.template_name, {'form': form})
+
+
 
 def register_request(request):
 	if request.method == "POST":
