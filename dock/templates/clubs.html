@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %} 
+{% block content %} 
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href='https://fonts.googleapis.com/css?family=Taviraj' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Taviraj';
+            font-size: 22px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <font size="5"><a href="{% url 'portalpage' %}">Back to Portal Page</a></font> 
+    <h1 style="text-align:center; border:2px solid Tomato;"><strong> <span style="color:tomato">PlattsMeet</span> Club Hub</strong></h1>
+      <p style="text-align:center;"><b>Do you want to get involved?</b></p>
+      <p style="text-align:center;">Here are some of the types of clubs SUNY Plattsburgh has to offer:</p>
+        <ul style="list-style-type:disc;">
+          <li>Academic Honor Societies (Fraternity/Sorority Life)</li>
+          <li>Sports Clubs</li>
+          <li>Student Association Clubs</li>
+            <dd> <li><small>Academic Clubs</small></li>
+            <li><small>Cultural Clubs</small></li>
+            <li><small>Recreational Clubs</small></li>
+            </dd>
+        </ul>
+    <hr>
+    <h2 style="text-align:center;border:2px solid Tomato;"><strong>And More!</strong></h2>
+      <p style="text-align:center;"> <a href="https://www.plattsburgh.edu/plattslife/get-involved/clubs-organizations/index.html">Click here</a> to browse clubs on the SUNY Plattsburgh website! </p>
+
+  </body>
+</html>
+{% endblock content %}
