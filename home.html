@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %} 
+{% block content %} 
+<header>
+    <div>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'help' %}">Help</a>
+    </div>
+    <!-- <div className="btn-group">
+        <button type="button" variant = "outlined" className="HelpButton" onclick =>Help</button>  
+        <button type="button" variant = "outlined" className="AboutButton">About</button> 
+    </div> -->
+    <div class = "access">
+        <p><a href="{% url 'login' %}">Log in</a></p>
+        <a href="{% url 'register' %}">New User?Register</a>
+        <p><a href="{% url 'password_reset' %}">Reset Password</a></p>
+    </div>
+    <div>
+        <img class = "logo" src = "{% static 'logo.svg' %}" alt="/"> 
+    </div>
+  
+{% endblock content %}
+
